@@ -6,8 +6,6 @@ const Home = lazy(() => import('./Home'));
 const App: React.FC = () => (
   <Router>
     <Suspense fallback={<div>Loading...</div>}>
-      {/*...*/}
-    </Suspense>
     <nav>
       <ul>
         <li>
@@ -26,6 +24,7 @@ const App: React.FC = () => (
         <Home />
       </Route>
     </Switch>
+    </Suspense>
   </Router>
 );
 
